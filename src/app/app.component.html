@@ -1,0 +1,59 @@
+City :<input type="text" [(ngModel)]="city">
+<p>The entered city is: {{ city }}</p>
+
+
+
+<button (click)="UpdateCity()">Update</button>
+
+
+<table border="1" style="border-collapse: collapse; text-align: left;">
+    <!-- Table Header -->
+    <tr>
+      <th *ngFor="let item of headings">
+        {{ item }}
+      </th>
+    </tr>
+  
+    <!-- Table Data -->
+    <tr>
+      <td *ngFor="let i of Evalues">
+        {{ i }}
+      </td>
+    </tr>
+  </table>
+
+  <h1 *ngIf="data; then code; else sample"></h1>
+  
+<ng-template #code>
+  this is headLine!
+</ng-template>
+
+<ng-template #sample>
+this is else part
+</ng-template>
+
+
+<h1 *ngFor="let a of num">round {{a}}</h1>
+
+
+
+<div [ngSwitch]="operation">
+  <h1 *ngSwitchCase="'+'">sum:{{num1 + num2}}</h1>
+  <h1 *ngSwitchCase="'-'">sub:{{num1 - num2}}</h1>
+  <h1 *ngSwitchDefault>Invalid operation</h1>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <app-header></app-header> -->
+<router-outlet />
+
