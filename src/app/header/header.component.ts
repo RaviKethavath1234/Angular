@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   date: string = new Date().toLocaleDateString();
   isActive:boolean=false; 
-  cvar:string='green'
+  cvar:string='blue'
 
   counter: number = 1; // Initialize the counter
 
