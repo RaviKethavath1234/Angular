@@ -11,7 +11,7 @@ export class HeaderComponent {
   isActive:boolean=false; 
   cvar:string='green'
 
-  counter: number = 0; // Initialize the counter
+  counter: number = 1; // Initialize the counter
 
   Increament(): void {
     this.counter++; // Increment the counter
