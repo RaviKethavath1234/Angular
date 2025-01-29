@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   standalone:true,
   selector: 'app-root',
-  imports: [RouterOutlet,FormsModule,CommonModule],
+  imports: [RouterOutlet,FormsModule,CommonModule,HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -30,7 +30,7 @@ operation:string="-";
 
 
 
-
+dataValue="Input decorator example";
 
 
 

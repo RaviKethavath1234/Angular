@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -20,4 +20,6 @@ export class HeaderComponent {
   Decreament(): void {
     this.counter--; // Decrement the counter
   }
+
+@Input() data1:any;
 }
