@@ -21,5 +21,70 @@ export class HeaderComponent {
     this.counter--; // Decrement the counter
   }
 
-@Input() data1:any;
+  @Input() data1:any;
+
+
+
+  customerName="TCS";
+
+  demo(){
+    return "Adroitent Ites Pvt Ltd";
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
